@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #111;
+  scroll-behavior: smooth;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
