@@ -1,0 +1,12 @@
+/* Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .logo-group .logo-text {
+    display: none;
+  }
+  .logo-group .logo-icon{
+    max-width: 50px;
+  }
+}

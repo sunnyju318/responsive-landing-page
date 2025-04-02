@@ -6,7 +6,6 @@
 
 html,
 body {
-  height: 100%;
   width: 100%;
   font-family: sans-serif;
   background-color: #fff;
@@ -14,14 +13,16 @@ body {
   scroll-behavior: smooth;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
 }
-

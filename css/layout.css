@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-group {
+  display: flex;
+  max-width: 200px;
+}
+
+/* navigation */
+nav {
+  position: absolute;
+}
+
+nav>ul>a>li {
+  display: inline-block;
+  background-color: aqua;
+}
