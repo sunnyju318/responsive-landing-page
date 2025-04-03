@@ -11,6 +11,7 @@ body {
   background-color: #fff;
   color: #111;
   scroll-behavior: smooth;
+  font-size: 1rem;
 }
 
 img {
@@ -25,4 +26,12 @@ a {
   list-style: none;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
 }

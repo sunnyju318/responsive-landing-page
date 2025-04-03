@@ -7,14 +7,23 @@ body {
 
 /* header */
 header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5rem 2rem;
+  overflow: hidden;
+  transition: ease 0.1s;
 }
 
 .logo-group {
   display: flex;
   max-width: 200px;
+  gap: 1rem;
+}
+
+.logo-group .logo-text {
+  transition: ease 1s;
 }
 
 /* navigation */
@@ -34,3 +43,10 @@ main{
 }
 
 /* footer */
+footer{
+  width: 100%;
+}
+
+footer img{
+  width: 50px;
+}

@@ -1,7 +1,11 @@
 @import url(base/reset.css);
-@import url(media.css);
 @import url(layout.css);
 @import url(section.css);
+@import url(components/button.css);
+@import url(base/typography.css);
+@import url(media.css);
+
+/* The order of CSS imports matters — styles that are imported last will override those that come before them if there are conflicting rules. */
 
 
 

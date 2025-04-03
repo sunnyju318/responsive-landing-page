@@ -1,12 +1,31 @@
 /* Tablet*/
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
 
 /* Mobile */
 @media (max-width: 767px) {
   .logo-group .logo-text {
-    display: none;
+    transform: translate(0, -60px);
+
   }
   .logo-group .logo-icon{
     max-width: 50px;
+  }
+
+  .hero-button{
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .hero-content {
+    background-color: rgba(19, 18, 18, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  header {
+    padding: 1rem 1rem;
   }
 }
