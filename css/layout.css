@@ -26,3 +26,11 @@ nav>ul>a>li {
   display: inline-block;
   background-color: aqua;
 }
+
+/* main */
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+/* footer */
