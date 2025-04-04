@@ -23,7 +23,7 @@ header {
 }
 
 .logo-group .logo-text {
-  transition: ease 1s;
+  transition: ease 0.3s;
 }
 
 /* navigation */

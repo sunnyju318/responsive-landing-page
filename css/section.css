@@ -1,7 +1,7 @@
 /* hero */
 .hero {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -42,15 +42,34 @@ h1 .block {
 /* For design-oriented line breaks, it's better to use <span> with display: block rather than <br>, as it's more flexible and responsive. */
 
 
-
-
-
-
-
 /* about */
 .about {
-  display: none;
+  width: 80%;
+  max-width: 1300px;
+  min-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  gap: 1.5rem;
 }
+
+.about ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.about p,
+.about h2{
+  text-align: center;
+}
+
 
 /* features */
 .features {

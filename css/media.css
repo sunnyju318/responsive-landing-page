@@ -1,6 +1,8 @@
 /* Tablet*/
 @media (min-width: 768px) and (max-width: 1024px) {
-
+  .about-button{
+    width: 290px;
+  }
 }
 
 /* Mobile */
@@ -27,5 +29,9 @@
 
   header {
     padding: 1rem 1rem;
+  }
+
+  .about-button{
+    width: 290px;
   }
 }

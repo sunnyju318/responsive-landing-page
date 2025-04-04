@@ -8,7 +8,7 @@ button{
   transition: ease 0.3s;
 }
 
-button:hover{
+.hero-button:hover{
   background-color: rgba(152, 125, 4, 0.5);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -22,5 +22,20 @@ header button:hover{
 .hero-button{
   margin-top: 2rem;
   padding: 1rem 3rem;
+  font-size: 1.5rem;
+}
+
+.about-button{
+  width: 417px;
+  height: 60px;
+  border-radius: 1.5rem 0 1.5rem 0;
+  background-color: white;
+  color: #333;
+  border: 2px solid rgb(178, 178, 178);
+  transition: ease 0.1s;
+}
+
+.about-button:hover{
+  border: 2px solid rgb(82, 82, 82);
   font-size: 1.5rem;
 }
