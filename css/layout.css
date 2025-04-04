@@ -40,11 +40,27 @@ nav>ul>a>li {
 main{
   display: flex;
   flex-direction: column;
+  gap: 4rem;
 }
 
 /* footer */
 footer{
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 2rem;
+}
+
+footer ul{
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media-icons{
+  display: flex;
+  gap: 1rem;
 }
 
 footer img{

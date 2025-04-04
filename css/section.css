@@ -73,13 +73,75 @@ h1 .block {
 
 /* features */
 .features {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
 }
+
+.features-card-container{
+  display: flex;
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+
+.features h2{
+width: 80%;
+margin: 0 auto;
+max-width: 1300px;
+min-width: 300px;
+}
+
+.feature-card{
+  display: flex;
+  border-radius: 2rem;
+  background-color: rgb(255, 242, 224);
+  padding: 1.5rem;
+}
+
+h2 .block {
+  display: block;
+}
+
 
 /* team */
 .team {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
 }
+
+.team-card{
+  display: flex;
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+
+.team h2,
+.team p{
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1300px;
+  min-width: 300px;
+  }
+
+  .team p .block{
+    display: block;
+  }
+
+  .team-member{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    background-color: rgb(255, 242, 224);
+    padding: 1.5rem;
+  }
+
 
 /* ticker */
 .ticker {
@@ -88,25 +150,98 @@ h1 .block {
 
 /* testimonials */
 .testimonials {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
 }
+
+.review-card-container{
+  display: flex;
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+
+.testimonials h2,
+.testimonials p{
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1300px;
+  min-width: 300px;
+  }
+
+  .review-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    background-color: rgb(255, 242, 224);
+    padding: 1.5rem;
+  }
+
 
 /* download-cta */
 .download-cta {
-  display: none;
+  background-color: rgb(255, 242, 224);
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 1300px;
+  min-width: 300px;
 }
+
+.stats{
+  display: flex;
+  gap: 1.5rem;
+}
+
 
 /* faqs */
 .faqs {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1300px;
+  min-width: 300px;
 }
+
+.faqs h2{
+  text-align: center;
+}
+
 
 /* animation */
 .animation {
   display: none;
 }
 
+
 /* subscribe */
 .subscribe {
-  display: none;
+display: flex;
+flex-direction: column;
+background-color: rgb(255, 242, 224);
+gap: 1.5rem;
+}
+
+.subscribe-content,
+.subscribe h3{
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1300px;
+  min-width: 300px;
+}
+
+.subscribe-content{
+  display: flex;
+  gap: 1.5rem;
 }

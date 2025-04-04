@@ -8,14 +8,19 @@ button{
   transition: ease 0.3s;
 }
 
-.hero-button:hover{
-  background-color: rgba(152, 125, 4, 0.5);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+header button{
+  background-color: rgb(247, 210, 44);
+  color: black;
 }
 
 header button:hover{
   background-color: rgb(62, 62, 61);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-button:hover{
+  background-color: rgba(152, 125, 4, 0.5);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
