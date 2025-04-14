@@ -26,6 +26,14 @@ header {
   transition: ease 0.3s;
 }
 
+header button{
+  background-color: rgb(255, 112, 29);
+}
+
+header button:hover{
+  background-color: rgb(242, 90, 1);
+}
+
 /* navigation */
 nav {
   position: absolute;
@@ -40,13 +48,14 @@ nav>ul>a>li {
 main{
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 8rem;
 }
 
 /* footer */
 footer{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
@@ -65,4 +74,9 @@ footer ul{
 
 footer img{
   width: 50px;
+}
+
+footer p{
+  font-size: 1rem;
+  text-align: center;
 }

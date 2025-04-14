@@ -3,10 +3,19 @@
   .about-button{
     width: 290px;
   }
+
+  .download-cta {
+    height: 90vh;
+  }
 }
 
 /* Mobile */
 @media (max-width: 767px) {
+    /* header */
+    header {
+      padding: 1rem 1rem;
+    }
+
   .logo-group .logo-text {
     transform: translate(0, -60px);
 
@@ -15,6 +24,16 @@
     max-width: 50px;
   }
 
+  header button{
+    width: 150px;
+  }
+
+  /* main */
+  main{
+    gap: 5rem;
+  }
+
+  /* hero */
   .hero-button{
     margin-top: 2rem;
     padding: 1rem 2rem;
@@ -27,11 +46,83 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
-  header {
-    padding: 1rem 1rem;
+  .hero-button{
+    width: 200px;
   }
 
+/* about */
   .about-button{
     width: 290px;
+  }
+
+  /* feature */
+  .feature-card{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .feature-card-img {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  .feature-card-text p{
+    display: none;
+  }
+
+  .feature-card-text {
+    width: 70%;
+  }
+
+  .features-controls{
+    width: 90%;
+  }
+  
+  /* team */
+  .team-card {
+    height: 30vh;
+  }
+
+  /* testimonials */
+  .review-card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* download-cta */
+  .download-cta {
+    height: 80vh;
+    padding: 1rem;
+  }
+
+  .download-cta h2{
+    text-align: center;
+  }
+
+  .stats {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .download-button{
+  justify-content: center;
+  gap: 1rem;
+  }
+
+  .download-button a {
+  width: 200px;
+  border-radius: 1rem;
+  }
+
+  .subscribe input{
+    width: 300px;
   }
 }

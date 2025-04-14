@@ -39,6 +39,19 @@ h1 .block {
   display: block;
 }
 
+.hero-button:hover {
+  background-color: rgb(242, 90, 1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-button {
+  width: 300px;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+}
+
 /* For design-oriented line breaks, it's better to use <span> with display: block rather than <br>, as it's more flexible and responsive. */
 
 
@@ -66,10 +79,24 @@ h1 .block {
 }
 
 .about p,
-.about h2{
+.about h2 {
   text-align: center;
 }
 
+.about-button {
+  width: 417px;
+  height: 60px;
+  border-radius: 1.5rem 0 1.5rem 0;
+  background-color: white;
+  color: #333;
+  border: 2px solid rgb(178, 178, 178);
+  transition: ease 0.1s;
+}
+
+.about-button:hover {
+  border: 2px solid rgb(82, 82, 82);
+  font-size: 1.5rem;
+}
 
 /* features */
 .features {
@@ -79,32 +106,119 @@ h1 .block {
   width: 100%;
   text-align: center;
   overflow: hidden;
+  position: relative;
 }
 
-.features-card-container{
+.features-card-container {
   display: flex;
+  width: fit-content;
+  transition: transform 0.5s ease-in-out;
   margin-top: 1rem;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
-.features h2{
-width: 80%;
-margin: 0 auto;
-max-width: 1300px;
-min-width: 300px;
+.features h2 {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1300px;
+  min-width: 300px;
 }
 
-.feature-card{
+.feature-card {
+  width: 60vw;
+  height: auto;
+  min-height: 60vh;
+  flex-shrink: 0;
+  /* Prevent the slide from shrinking when the container is too small */
   display: flex;
+  justify-content: center;
   border-radius: 2rem;
-  background-color: rgb(255, 242, 224);
-  padding: 1.5rem;
+  padding: 3rem;
+  gap: 2rem;
+  transition: ease 0.5s;
 }
 
 h2 .block {
   display: block;
 }
 
+.feature-card-img {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.feature-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: 600px;
+  min-height: 300px;
+}
+
+.feature-card-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.features-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  width: 60%;
+}
+
+.features-controls button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5rem;
+  background-color: white;
+  border: 5px solid #b6b5b5;
+}
+
+.features-controls button svg {
+  fill: #b6b5b5;
+  width: 100%;
+  height: 100%;
+}
+
+.features-controls button svg:hover {
+  fill: rgb(22, 86, 83);
+}
+
+.first-card {
+  background-color: rgb(255, 183, 0);
+}
+
+.second-card {
+  background-color: rgb(22, 86, 83);
+  color: white;
+}
+
+.second-card h3,
+.third-card h3 {
+  color: white;
+}
+
+.third-card {
+  background-color: rgb(252, 119, 41);
+  color: white;
+}
+
+.feature-card button {
+  background-color: white;
+  color: rgb(63, 63, 63);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.feature-card button:hover {
+  background-color: rgb(240, 239, 239);
+}
 
 /* team */
 .team {
@@ -116,36 +230,102 @@ h2 .block {
   overflow: hidden;
 }
 
-.team-card{
+.team-card {
+  height: 50vh;
+  min-height: 500px;
   display: flex;
   margin-top: 1rem;
   gap: 1.5rem;
+  animation: scrollLeft 10s linear infinite;
+}
+
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .team h2,
-.team p{
+.team p {
   width: 80%;
   margin: 0 auto;
   max-width: 1300px;
   min-width: 300px;
-  }
+}
 
-  .team p .block{
-    display: block;
-  }
+.team p .block {
+  display: block;
+}
 
-  .team-member{
-    display: flex;
-    flex-direction: column;
-    border-radius: 2rem;
-    background-color: rgb(255, 242, 224);
-    padding: 1.5rem;
-  }
+.team-member {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  border-radius: 2rem;
+  background-color: rgb(255, 242, 224);
+  padding: 1.5rem;
+}
 
+.mia-leung {
+  background: url(/img/team/mia-leung.png) center/cover;
+}
 
-/* ticker */
-.ticker {
-  display: none;
+.daniel-ruiz {
+  background: url(/img/team/daniel-ruiz.png) center/cover;
+}
+
+.lisa-chen {
+  background: url(/img/team/lisa-chen.png) center/cover;
+  color: white;
+}
+
+.lisa-chen h3,
+.sarah-ahmed h3,
+.tom-bannett h3,
+.emily-takano h3,
+.julia-park h3,
+.marco-de-luca h3,
+.nina-kapoor h3 {
+  color: white;
+}
+
+.sarah-ahmed {
+  background: url(/img/team/sarah-ahmed.png) center/cover;
+  color: white;
+}
+
+.tom-bannett {
+  background: url(/img/team/tom-bannett.png) center/cover;
+  color: white;
+}
+
+.emily-takano {
+  background: url(/img/team/emily-takano.png) center/cover;
+  color: white;
+}
+
+.julia-park {
+  background: url(/img/team/julia-park.png) center/cover;
+  color: white;
+}
+
+.marco-de-luca {
+  background: url(/img/team/marco-de-luca.png) center/cover;
+  color: white;
+}
+
+.nina-kapoor {
+  background: url(/img/team/nina-kapoor.png) center/cover;
+  color: white;
+}
+
+.anthony-reed {
+  background: url(/img/team/anthony-reed.png) center/cover;
 }
 
 /* testimonials */
@@ -154,54 +334,87 @@ h2 .block {
   flex-direction: column;
   gap: 1.5rem;
   width: 100%;
+  height: auto;
   text-align: center;
-  overflow: hidden;
+  padding: 1rem;
 }
 
-.review-card-container{
+.review-card-container {
   display: flex;
   margin-top: 1rem;
   gap: 1.5rem;
 }
 
 .testimonials h2,
-.testimonials p{
+.testimonials p {
   width: 80%;
   margin: 0 auto;
   max-width: 1300px;
   min-width: 300px;
-  }
+}
 
-  .review-card{
-    display: flex;
-    flex-direction: column;
-    border-radius: 2rem;
-    background-color: rgb(255, 242, 224);
-    padding: 1.5rem;
-  }
+.review-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  background-color: rgb(255, 242, 224);
+  padding: 1.5rem;
+}
 
+/* ticker */
+.ticker {
+  display: none;
+}
 
 /* download-cta */
 .download-cta {
-  background-color: rgb(255, 242, 224);
+  background: url(/img/photo-plan-free-thumbnail-unsplash.jpg) center/ cover;
+  height: 70vh;
   width: 80%;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 3rem;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
   max-width: 1300px;
   min-width: 300px;
 }
 
-.stats{
+.stats {
+  margin-top: 5rem;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
+  font-size: 2rem;
 }
 
+.stats div{
+  text-align: center;
+  font-weight: bold;
+}
+
+.download-button{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.download-button a {
+  display: inline-block;
+  width: 300px;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.download-button a img {
+  width: 100%;
+}
 
 /* faqs */
 .faqs {
@@ -214,10 +427,15 @@ h2 .block {
   min-width: 300px;
 }
 
-.faqs h2{
+.faqs h2 {
   text-align: center;
 }
 
+.faqs ul li{
+  padding: 2rem;
+  font-size: 1.5rem;
+  border-bottom: solid 1px rgb(102, 101, 101);
+}
 
 /* animation */
 .animation {
@@ -227,21 +445,48 @@ h2 .block {
 
 /* subscribe */
 .subscribe {
-display: flex;
-flex-direction: column;
-background-color: rgb(255, 242, 224);
-gap: 1.5rem;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 183, 0);
+  gap: 1.5rem;
 }
 
 .subscribe-content,
-.subscribe h3{
+.subscribe h3 {
   width: 80%;
   margin: 0 auto;
   max-width: 1300px;
   min-width: 300px;
+  color: white;
 }
 
-.subscribe-content{
+.subscribe-content {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
+}
+
+.subscribe-content p{
+  display: inline-block;
+  max-width: 700px;
+}
+
+.subscribe input{
+  width: 350px;
+  height: 50px;
+  padding: 1rem;
+  border-radius: 5rem;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.subscribe button{
+  background-color: rgb(252, 119, 41);
+}
+
+.subscribe form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

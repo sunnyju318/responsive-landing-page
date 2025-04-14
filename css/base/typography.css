@@ -23,7 +23,7 @@ h3{
 
 p{
   font-family: "Inter", sans-serif;
-  font-size: clamp(1rem, 2vw, 1.2rem); 
+  font-size: clamp(1.2rem, 3vw, 1.4rem); 
 }
 
 .b1{
