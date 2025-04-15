@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Easy Meal Download</title>
   <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -23,39 +24,30 @@
         <img src="img/logo/textLogo.png" alt="logo of text">
       </a>
     </div>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#downloadCta">Downioad</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.6 3.7">
+        <path
+          d="M0 3.2c0-.1 0-.2.1-.3L2.4.2c.1-.2.2-.2.4-.2s.3 0 .4.2l2.3 2.7c.2.2.2.5 0 .7-.2.2-.5.2-.7 0L2.9 1.4l-2 2.1c-.2.2-.5.2-.7 0-.2-.1-.2-.2-.2-.3Z" />
+      </svg>
+    </button>
     <button type="button">Try for free</button>
   </header>
-  <!-- <nav>
-    <ul>
-    <a href="#">
-      <li>Home</li>
-    </a>
-    <a href="#">
-      <li>about</li>
-    </a>
-    <a href="#">
-      <li>Features</li>
-    </a>
-    <a href="#">
-      <li>Our Team</li>
-    </a>
-    <a href="#">
-      <li>Reviews</li>
-    </a>
-    <a href="#">
-      <li>Downioad</li>
-    </a>
-    <a href="#">
-      <li>FAQs</li>
-    </a>
-    <a href="#">
-      <li>Subscribe</li>
-    </a>
-  </ul>
-</nav> -->
   <main>
 
-    <Section class="hero">
+    <section class="hero">
       <video autoplay muted loop playsinline class="hero-bg">
         <source src="img/hero-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -71,9 +63,9 @@
         </p>
         <button type="button" class="hero-button">Try 14 days free</button>
       </div>
-    </Section>
+    </section>
 
-    <Section class="about">
+    <section class="about" id="about">
       <h2>Why EasyMeal?</h2>
       <p>Your personal companion for calm, balanced, and simplified cooking.</p>
       <ul>
@@ -84,9 +76,9 @@
         <li><button type="button" class="about-button b1">Mindful eating</button></li>
         <li><button type="button" class="about-button b1">Learn as you go</button></li>
       </ul>
-    </Section>
+    </section>
 
-    <Section class="features">
+    <Section class="features" id="features">
       <h2>
         <span class="block">The smart meal planner</span>
         <span class="block">that fits your life</span>
@@ -139,20 +131,20 @@
           <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 2" viewBox="0 0 455.09 500.4">
             <path
               d="M40.95 321.13c-54.6-31.53-54.6-110.31 0-141.84L332.24 11.1c54.6-31.53 122.85 7.89 122.85 70.92v336.37c0 63.03-68.25 102.42-122.84 70.92L40.95 321.13Z"
-              data-name="Layer 1"/>
+              data-name="Layer 1" />
           </svg>
         </button>
         <button id="nextBtn">
           <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 2" viewBox="0 0 466.44 512.9">
             <path
               d="M424.47 183.76c55.96 32.29 55.96 113.07 0 145.39L125.91 501.54C69.95 533.83 0 493.45 0 428.85V84.07c0-64.61 69.95-105.01 125.91-72.7l298.56 172.39Z"
-              data-name="Layer 1"/>
+              data-name="Layer 1" />
           </svg>
         </button>
       </div>
     </Section>
 
-    <Section class="team">
+    <section class="team" id="team">
       <h2>
         <span class="block">Designed by food lovers, </span>
         <span class="block">built for real life</span>
@@ -214,35 +206,33 @@
           <p>Helps users get the most out of EasyMeal with onboarding tips.</p>
         </div>
       </div>
-    </Section>
+    </section>
 
-    <Section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <h2>
         <span class="block">Meals made simpler,</span>
         <span class="block">lives made better</span>
       </h2>
       <div class="review-card-container">
         <div class="review-card">
-          <p>"I appreciate the consistent reminders to be kind and patient with myself as I learn and practice daily
-            habits that are helping me find a calmer daily space."</p>
+          <p>"I appreciate the consistent reminders to be kind and patient with myself..."</p>
           <p>Member on forming more helpful habits</p>
         </div>
         <div class="review-card">
-          <p>"EasyMeal helped me begin the process of stepping back from unhealthy routines and being part of something
-            that actually fits my life."</p>
+          <p>"EasyMeal helped me begin the process of stepping back from unhealthy routines..."</p>
           <p>Member on learning to eat with intention</p>
         </div>
         <div class="review-card">
-          <p>"The strategies in the plans allow me to stay on track with my wellness goals. EasyMeal changed the way I
-            think about food and self-care."</p>
+          <p>"The strategies in the plans allow me to stay on track with my wellness goals..."</p>
           <p>Member on working through their lifestyle habits</p>
         </div>
       </div>
-    </Section>
+
+    </section>
 
     <div class="ticker"></div>
 
-    <Section class="download-cta">
+    <section class="download-cta" id="downloadCta">
       <p>Over 1M hours saved in meal prep</p>
       <h2>
         <span class="block">Join the millions </span>
@@ -262,9 +252,9 @@
         <div>10M+ Meals Generated</div>
         <div>120K+ Active users every day</div>
       </div>
-    </Section>
+    </section>
 
-    <Section class="faqs">
+    <section class="faqs" id="faqs">
       <h2>Frequently Asked Questions</h2>
       <ul>
         <li>Q1. What is EasyMeal?</li>
@@ -274,20 +264,20 @@
         <li>Q5. What's included in an EasyMeal subscription?</li>
         <li>Q6. How do I cancel my subscription?</li>
       </ul>
-    </Section>
+    </section>
 
     <div class="animation"></div>
 
-    <Section class="subscribe">
+    <section class="subscribe" id="subscribe">
       <h3>Stay in the loop</h3>
       <div class="subscribe-content">
         <p>Be the first to know about new features, tips, and promo offers from EasyMeal.</p>
-        <form action="">
-          <input type="email" placeholder="Email address" />
+        <form action="#">
+          <input type="email" placeholder="Email address">
         </form>
         <button>Subscribe</button>
       </div>
-    </Section>
+    </section>
   </main>
 
   <footer>
@@ -310,8 +300,8 @@
     </div>
   </footer>
 
-
-  <script type="module" src="js/main.js" defer></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,8 @@
 /* hero */
 .hero {
+  margin-top: 6rem;
   width: 100%;
-  height: 70vh;
+  min-height: 70vh;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -65,7 +66,6 @@ h1 .block {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0;
   gap: 1.5rem;
 }
 
@@ -340,9 +340,8 @@ h2 .block {
 }
 
 .review-card-container {
-  display: flex;
-  margin-top: 1rem;
-  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 2rem;
 }
 
 .testimonials h2,
@@ -370,7 +369,7 @@ h2 .block {
 /* download-cta */
 .download-cta {
   background: url(/img/photo-plan-free-thumbnail-unsplash.jpg) center/ cover;
-  height: 70vh;
+  min-height: 70vh;
   width: 80%;
   margin: 0 auto;
   padding: 3rem;
@@ -393,12 +392,12 @@ h2 .block {
   font-size: 2rem;
 }
 
-.stats div{
+.stats div {
   text-align: center;
   font-weight: bold;
 }
 
-.download-button{
+.download-button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -431,7 +430,7 @@ h2 .block {
   text-align: center;
 }
 
-.faqs ul li{
+.faqs ul li {
   padding: 2rem;
   font-size: 1.5rem;
   border-bottom: solid 1px rgb(102, 101, 101);
@@ -467,12 +466,12 @@ h2 .block {
   gap: 1.5rem;
 }
 
-.subscribe-content p{
+.subscribe-content p {
   display: inline-block;
   max-width: 700px;
 }
 
-.subscribe input{
+.subscribe input {
   width: 350px;
   height: 50px;
   padding: 1rem;
@@ -481,11 +480,11 @@ h2 .block {
   border: none;
 }
 
-.subscribe button{
+.subscribe button {
   background-color: rgb(252, 119, 41);
 }
 
-.subscribe form{
+.subscribe form {
   display: flex;
   justify-content: center;
   align-items: center;

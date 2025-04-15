@@ -7,6 +7,7 @@ body {
 
 /* header */
 header {
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -14,6 +15,35 @@ header {
   padding: 1.5rem 2rem;
   overflow: hidden;
   transition: ease 0.1s;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.95);
+  /* backdrop-filter: blur(10px);  */
+
+  /* 
+  ⚠️ backdrop-filter: blur(10px); → Temporarily disabled
+
+  Issue:
+  - The `.nav-toggle` button (with `position: fixed`) appeared to be constrained within the header,
+    instead of staying fixed relative to the entire viewport.
+
+  Cause:
+  - `backdrop-filter` causes the browser to create a new rendering (GPU) layer for the element.
+  - This can break the expected behavior of `position: fixed` inside the element,
+    especially in WebKit-based browsers like Safari or even in some Chromium environments.
+  - As a result, the button's position was calculated relative to the header instead of the viewport.
+
+Temporary Fix:
+  - Commenting out `backdrop-filter` restored the expected fixed positioning of the toggle button.
+
+  Notes for later:
+  - To use `backdrop-filter` without this issue, consider:
+      - Moving `.nav-toggle` outside of the header,
+      - Using `will-change: transform;` on the button,
+      - Or isolating the rendering context via `isolation: isolate` or other techniques.
+*/
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo-group {
@@ -26,33 +56,46 @@ header {
   transition: ease 0.3s;
 }
 
-header button{
+header button {
   background-color: rgb(255, 112, 29);
 }
 
-header button:hover{
+header button:hover {
   background-color: rgb(242, 90, 1);
 }
 
 /* navigation */
-nav {
-  position: absolute;
+nav ul {
+  display: flex;
 }
 
-nav>ul>a>li {
-  display: inline-block;
-  background-color: aqua;
+nav a {
+  font-size: clamp(1rem, 1.3vw, 1.5rem);
+  margin-right: 3rem;
+  color: rgb(120, 120, 120);
+}
+
+nav a:hover {
+  color: rgb(0, 0, 0);
+}
+
+nav ul li:last-child a {
+  margin-right: 0;
 }
 
 /* main */
-main{
+main {
   display: flex;
   flex-direction: column;
-  gap: 8rem;
+  gap: 10rem;
+}
+
+.nav-toggle {
+  display: none;
 }
 
 /* footer */
-footer{
+footer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -62,21 +105,21 @@ footer{
   padding: 2rem 2rem;
 }
 
-footer ul{
+footer ul {
   display: flex;
   gap: 1rem;
 }
 
-.social-media-icons{
+.social-media-icons {
   display: flex;
   gap: 1rem;
 }
 
-footer img{
+footer img {
   width: 50px;
 }
 
-footer p{
+footer p {
   font-size: 1rem;
   text-align: center;
 }
